@@ -1,4 +1,4 @@
 catalogue:
-	@sh componentes/catalogue.sh
+	@bash componentes/catalogue.sh
 mongodb:
 	@sh componentes/mongodb.sh
