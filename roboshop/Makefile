@@ -1,4 +1,4 @@
 catalogue:
-	@sh roboshop/components/catalogue.sh
+	@sh components/catalogue.sh
 mongodb:
-	@bash roboshop/componentes/mongodb.sh
+	@sh roboshop/componentes/mongodb.sh
