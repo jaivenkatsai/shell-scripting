@@ -18,16 +18,16 @@ mysql:	## Installing Mysql
 	@bash components/mysql.sh
 
 shipping:	## Installing Shipping
-	@bash componentes/shipping.sh
+	@bash components/shipping.sh
 
 rabbitmq:	## Installing Rabbitmq
-	@bash componentes/rabbitmq.sh
+	@bash components/rabbitmq.sh
 
 payment:	## Installing Payment
-	@bash componentes/payment.sh
+	@bash components/payment.sh
 
 frontend:	## Installing Frontend
-	@bash componentes/frontend.sh
+	@bash components/frontend.sh
 
 
 
