@@ -1,12 +1,12 @@
 
 catalogue:	## Installing Catalogue
-	@bash componentes/catalogue.sh
+	@bash components/catalogue.sh
 
 mongodb:	## Installing MongoDB
-	@bash componentes/mongodb.sh
+	@bash components/mongodb.sh
 
 redis:	## Installing Redis
-	@bash componentes/redis.sh
+	@bash components/redis.sh
 
 user:	## Installing User
 	@bash componentes/user.sh
