@@ -9,13 +9,13 @@ redis:	## Installing Redis
 	@bash components/redis.sh
 
 user:	## Installing User
-	@bash componentes/user.sh
+	@bash components/user.sh
 
 cart:	## Installing Cart
-	@bash componentes/cart.sh
+	@bash components/cart.sh
 
 mysql:	## Installing Mysql
-	@bash componentes/mysql.sh
+	@bash components/mysql.sh
 
 shipping:	## Installing Shipping
 	@bash componentes/shipping.sh
