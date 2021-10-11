@@ -1,1 +1,1 @@
-echo "insta"
+echo "installing redis"
