@@ -5,10 +5,8 @@ mongodb:	## Installing MongoDB
 	@bash components/mongodb.sh
 redis:	## Installing Redis
 	@bash components/redis.sh
-
 user:	## Installing User
 	@bash components/user.sh
-
 cart:	## Installing Cart
 	@bash components/cart.sh
 
