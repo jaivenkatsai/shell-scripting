@@ -9,16 +9,12 @@ user:	## Installing User
 	@bash components/user.sh
 cart:	## Installing Cart
 	@bash components/cart.sh
-
 mysql:	## Installing Mysql
 	@bash components/mysql.sh
-
 shipping:	## Installing Shipping
 	@bash components/shipping.sh
-
 rabbitmq:	## Installing Rabbitmq
 	@bash components/rabbitmq.sh
-
 payment:	## Installing Payment
 	@bash components/payment.sh
 
