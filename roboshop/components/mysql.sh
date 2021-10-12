@@ -1,1 +1,1 @@
-echo "Installing my"
+echo "Installing mysql"
