@@ -17,7 +17,6 @@ rabbitmq:	## Installing Rabbitmq
 	@bash components/rabbitmq.sh
 payment:	## Installing Payment
 	@bash components/payment.sh
-
 frontend:	## Installing Frontend
 	@bash components/frontend.sh
 
