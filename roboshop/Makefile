@@ -27,7 +27,7 @@ payment:	## Installing Payment
 	@bash components/payment.sh
 
 frontend:	## Installing Frontend
-	@bash components/frontende.sh
+	@bash components/frontend.sh
 
 
 
