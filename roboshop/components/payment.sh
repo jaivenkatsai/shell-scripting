@@ -1,1 +1,1 @@
-echo "Installing "
+echo "Installing payment"
