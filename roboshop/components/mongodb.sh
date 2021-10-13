@@ -7,7 +7,7 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mongodb.repo
 
-yum install -y mongodb-org 
+yum install -y mongodb-org >
 systemctl enable mongod
 systemctl start mongod
 
@@ -23,5 +23,4 @@ unzip mongodb.zip
 cd mongodb-main
 mongo < catalogue.js
 mongo < users.js 
-  
   
