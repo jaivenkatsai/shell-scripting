@@ -20,7 +20,7 @@ curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongo
 
 cd /tmp
 unzip -o mongodb.zip
-cd mongodb-main
+cd mongodb-main 
 mongo < catalogue.js
 mongo < users.js 
   
