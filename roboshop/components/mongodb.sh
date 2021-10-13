@@ -27,6 +27,7 @@ cd /tmp
 echo "Extarcting Schema Archive"
 unzip -o mongodb.zip >/tmp/log
 cd mongodb-main 
+echo ""
 mongo < catalogue.js >/tmp/log
 mongo < users.js >/tmp/log
   
