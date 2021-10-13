@@ -8,21 +8,18 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mongodb.repo
 
 yum install -y mongodb-org 
-# systemctl enable mongod
-# systemctl start mongod
-#127.0.0.1 to 0.0.0.0 in config file
-#Config file: /etc/mongod.conf
+systemctl enable mongod
+systemctl start mongod
 
-#then restart the service
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 
-# systemctl restart mongod
-#Every Database needs the schema to be loaded for the application to work.
-#Download the schema and load it.
 
-# curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
+systemctl restart mongod
 
-# cd /tmp
-# unzip mongodb.zip
-# cd mongodb-main
-# mongo < catalogue.js
-# mongo < users.js 
+curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
+
+cd /tmp
+unzip mongodb.zip
+cd mongodb-main
+mongo < catalogue.js
+mongo < users.js 
