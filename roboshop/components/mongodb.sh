@@ -9,6 +9,9 @@ gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mong
 
 echo "Installing MongoDB"
 yum install -y mongodb-org >/tmp/log
+
+echo "Configuring MongoDB"
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
  
 echo "Starting MongoDB"
 systemctl enable mongod
