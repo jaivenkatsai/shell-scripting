@@ -11,6 +11,7 @@ if [ $? -eq 0]; then
 else
     echo -e "\e[31mSUCCESS\e[0m"
 
+
 echo "Installing MongoDB"
 yum install -y mongodb-org >>/tmp/log
 
