@@ -17,7 +17,7 @@ echo "Starting MongoDB"
 systemctl enable mongod
 systemctl restart mongod
 
-echo "Downloading "
+echo "Downloading MongoDB S"
 curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
 
 cd /tmp
