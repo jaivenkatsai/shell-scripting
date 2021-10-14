@@ -13,7 +13,7 @@ else
 fi
 
 echo "Installing MongoDB"
-yum install -y mongodb-org >>/tmp/log
+yum install -y mongodb-org &>>/tmp/log
 if [ $? -eq 0]; then
     echo -e "\e[32mSUCCESS\e[0m"
 else
