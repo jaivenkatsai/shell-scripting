@@ -9,7 +9,7 @@ gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mong
 if [ $? -eq 0]; then
     echo -e "\e[32mSUCCESS\e[0m"
 else
-    echo 
+    echo -e "\e[31mSUCCESS\e[0m"
 
 echo "Installing MongoDB"
 yum install -y mongodb-org >>/tmp/log
