@@ -6,9 +6,9 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mongodb.repo
 
 yum install -y mongodb-org 
-# systemctl enable mongod
-# systemctl start mongod
-Update Liste IP address from 127.0.0.1 to 0.0.0.0 in config file
+systemctl enable mongod
+systemctl start mongod
+Update Liste IP address from 27.0.0.1 to 0.0.0.0 in config file
 Config file: /etc/mongod.conf
 
 then restart the service
