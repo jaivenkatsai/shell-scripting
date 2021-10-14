@@ -18,4 +18,4 @@ cd /tmp
 unzip mongodb.zip >/tmp/log
 cd mongodb-main
 mongo < catalogue.js >/tmp/log
-mongo < users.js 
+mongo < users.js  >/tmp/log
