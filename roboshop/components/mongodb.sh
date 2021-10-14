@@ -7,7 +7,7 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mongodb.repo
 
-yum install -y mongodb-org &>>/tmp/log
+yum install -y mongodb-org 
 
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
 
@@ -17,7 +17,7 @@ systemctl restart mongod
 curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
 
 cd /tmp
-unzip -o mongodb.zip &>>/tmp/log
+unzip -o mongodb.zip
 cd mongodb-main 
 mongo < catalogue.js 
 mongo < users.js 
