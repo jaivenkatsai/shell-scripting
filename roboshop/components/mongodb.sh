@@ -48,6 +48,7 @@ fi
 cd /tmp
 echo "Extarcting Schema Archive"
 unzip -o mongodb.zip >>/tmp/log
+
 cd mongodb-main 
 echo "Loading Schema"
 mongo < catalogue.js >>/tmp/log
