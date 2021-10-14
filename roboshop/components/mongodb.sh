@@ -25,6 +25,6 @@ echo "Extacting Schema Archive"
 unzip -o mongodb.zip >/tmp/log
 cd mongodb-main 
  
- echo "Loading Schema"
+echo "Loading Schema"
 mongo < catalogue.js >/tmp/log
 mongo < users.js  >/tmp/log
