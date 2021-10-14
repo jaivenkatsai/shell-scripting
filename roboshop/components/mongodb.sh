@@ -31,7 +31,11 @@ fi
 echo "Starting MongoDB"
 systemctl enable mongod
 systemctl restart mongod
-
+if [ $? -eq 0]; then
+    echo -e "\e[32mSUCCESS\e[0m"
+else
+    echo -e "\e[31mSUCCESS\e[0m"
+fi
 
 echo "Downloading MongoDB Schema"
 curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
