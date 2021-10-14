@@ -22,7 +22,7 @@ fi
 
 echo "Configuring MongoDB"
 sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
-if [ $ -eq 0 ]; then
+if [ $? -eq 0 ]; then
     echo -e "\e[32mSUCCESS\e[0m"
 else
     echo -e "\e[31mFAILURE\e[0m"
@@ -31,7 +31,7 @@ fi
 echo "Starting MongoDB"
 systemctl enable mongod
 systemctl restart mongod
-if [ $ -eq 0 ]; then
+if [ $? -eq 0 ]; then
     echo -e "\e[32mSUCCESS\e[0m"
 else
     echo -e "\e[31mFAILURE\e[0m"
