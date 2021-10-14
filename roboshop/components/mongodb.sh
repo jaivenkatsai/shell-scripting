@@ -1,4 +1,4 @@
-echo ""
+echo "Installing MongoDB"
 
 echo '[mongodb-org-4.2]
 name=MongoDB Repository
