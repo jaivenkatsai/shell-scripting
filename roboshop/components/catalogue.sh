@@ -10,11 +10,12 @@ useradd roboshop &>>$LOG
 Status_Check $?
 
 Print "Downloading catalogue content"
-$ curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
+$ curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip" &>>$LOG
 Status_Check $?
 
 cd /home/roboshop
 unzip -o /tmp/catalogue.zip &>>$LOG
+
 $ mv catalogue-main catalogue
 $ cd /home/roboshop/catalogue
 $ npm install 
