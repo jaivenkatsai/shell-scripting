@@ -25,7 +25,7 @@ unzip -o /tmp/catalogue.zip &>>$LOG
 mv catalogue-main catalogue
 Status_Check $?
 
-Print "Do"
+Print "Downloading NodeJS "
 cd /home/roboshop/catalogue
 npm install  --unsafe-perm &>>$LOG
 
