@@ -1,1 +1,1 @@
-echo "Installing catalogue"
+#!
