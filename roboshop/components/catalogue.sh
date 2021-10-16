@@ -15,8 +15,7 @@ Status_Check $?
 
 cd /home/roboshop
 unzip -o /tmp/catalogue.zip &>>$LOG
-
-$ mv catalogue-main catalogue
+mv catalogue-main catalogue
 $ cd /home/roboshop/catalogue
 $ npm install 
 NOTE: We need to update the IP address of MONGODB Server in systemd.service file
