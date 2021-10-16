@@ -11,6 +11,7 @@ fi
 Print() {
     echo -n -e "$1"
 }
+
 echo "Setting Up MongoDB Repo"
 
 echo '[mongodb-org-4.2]
