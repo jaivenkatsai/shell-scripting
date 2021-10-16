@@ -9,7 +9,7 @@ Status_Check $?
 Print Adding Roboshop User
 id roboshop &>>$LOG 
 if [ $? -eq 0 ]; then
-
+    echo ""
 else
     useradd roboshop &>>$LOG
 fi
