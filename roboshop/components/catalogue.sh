@@ -3,7 +3,7 @@
 source components/common.sh
 Print "Installing NodeJS"
 yum install nodejs make gcc-c++ -y &>>$LOG
-to the project. Hence we will use roboshop as the username to run the service.
+
 
 # useradd roboshop
 So let's switch to the roboshop user and run the following commands.
