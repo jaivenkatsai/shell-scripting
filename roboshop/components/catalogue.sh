@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# yum install nodejs make gcc-c++ -y 
+
+yum install nodejs make gcc-c++ -y 
 Let's now set up the catalogue application.
 
 As part of operating system standards, we run all the applications and databases as a normal user but not with root user.
