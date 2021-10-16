@@ -45,7 +45,7 @@ unzip -o mongodb.zip &>>/tmp/log
 Status_Check $?
 cd mongodb-main 
  
-echo "Loading Schema"
+Print "Loading Schema"
 mongo < catalogue.js &>>/tmp/log
 mongo < users.js  &>>/tmp/log
 Status_Check $?
