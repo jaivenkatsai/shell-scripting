@@ -13,8 +13,8 @@ Print "Downloading catalogue content"
 $ curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
 Status_Check $?
 
-$ cd /home/roboshop
-$ unzip /tmp/catalogue.zip
+cd /home/roboshop
+unzip /tmp/catalogue.zip
 $ mv catalogue-main catalogue
 $ cd /home/roboshop/catalogue
 $ npm install 
