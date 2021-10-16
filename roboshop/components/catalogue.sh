@@ -21,6 +21,7 @@ Status_Check $?
 
 Print "Extracting catalogue"
 cd /home/roboshop
+rm -rf 
 unzip -o /tmp/catalogue.zip &>>$LOG
 mv catalogue-main catalogue
 Status_Check $?
