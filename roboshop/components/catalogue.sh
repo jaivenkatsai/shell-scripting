@@ -30,7 +30,7 @@ cd /home/roboshop/catalogue
 npm install  --unsafe-perm &>>$LOG
 Status_Check $?
 
-
+chown
 
 # mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
 # systemctl daemon-reload
