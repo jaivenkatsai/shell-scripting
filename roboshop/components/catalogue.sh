@@ -4,7 +4,7 @@ source components/common.sh
 Print "Installing NodeJS"
 yum install nodejs make gcc-c++ -y &>>$LOG
 
-Print Adding 
+Print Adding Roboshop
 # useradd roboshop
 So let's switch to the roboshop user and run the following commands.
 
