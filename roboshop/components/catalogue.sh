@@ -14,7 +14,7 @@ $ curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/c
 Status_Check $?
 
 cd /home/roboshop
-unzip -o /tmp/catalogue.zip
+unzip -o /tmp/catalogue.zip &>>$LOG
 $ mv catalogue-main catalogue
 $ cd /home/roboshop/catalogue
 $ npm install 
