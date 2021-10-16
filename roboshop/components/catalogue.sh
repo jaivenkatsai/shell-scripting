@@ -16,7 +16,7 @@ Status_Check $?
 Print "Extracting catalogue"
 cd /home/roboshop
 unzip -o /tmp/catalogue.zip &>>$LOG
-
+Status_Check $?
 mv catalogue-main catalogue
 cd /home/roboshop/catalogue
 npm install 
