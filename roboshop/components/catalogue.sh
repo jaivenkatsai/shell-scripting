@@ -9,7 +9,7 @@ Print Adding Roboshop User
 useradd roboshop &>>$LOG
 Status_Check $?
 
-Print ""
+Print "Downloading catalogue content"
 $ curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
 $ cd /home/roboshop
 $ unzip /tmp/catalogue.zip
