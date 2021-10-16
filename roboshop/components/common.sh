@@ -13,4 +13,4 @@ Print() {
 }
 
 if [ $UID -ne 0 ];then
-    echo -e "\n\e"
+    echo -e "\n\e[1"
