@@ -16,7 +16,7 @@ fi
 Status_Check $?
 
 Print "Downloading catalogue content"
-$ curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip" &>>$LOG
+curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip" &>>$LOG
 Status_Check $?
 
 Print "Extracting catalogue"
