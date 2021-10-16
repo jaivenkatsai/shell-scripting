@@ -3,11 +3,7 @@
 source components/common.sh
 Print "Installing NodeJS"
 yum install nodejs make gcc-c++ -y &>>$LOG
-Let's now set up the catalogue application.
-
-As part of operating system standards, we run all the applications and databases as a normal user but not with root user.
-
-So to run the catalogue service we choose to run as a normal user and that user name should be more relevant to the project. Hence we will use roboshop as the username to run the service.
+to the project. Hence we will use roboshop as the username to run the service.
 
 # useradd roboshop
 So let's switch to the roboshop user and run the following commands.
