@@ -26,7 +26,7 @@ mv catalogue-main catalogue
 Status_Check $?
 
 cd /home/roboshop/catalogue
-npm install --unsafe- &>>$LOG
+npm install     --unsafe- &>>$LOG
 
 
 # mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
