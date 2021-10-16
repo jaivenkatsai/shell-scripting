@@ -13,4 +13,4 @@ Print() {
 }
 
 if [ $UID -ne 0 ];then
-    echo -e "\n\e[1;33m"
+    echo -e "\n\e[1;33myou "
