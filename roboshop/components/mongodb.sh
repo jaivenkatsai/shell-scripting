@@ -35,7 +35,7 @@ systemctl enable mongod
 systemctl restart mongod
 Status_Check $?
 
-echo "Downloading MongoDB Schema"
+Print "Downloading MongoDB Schema"
 curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
 Status_Check $?
 
