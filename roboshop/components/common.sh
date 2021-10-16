@@ -12,4 +12,4 @@ Print() {
     echo -n -e "$1 \t- "
 }
 
-if [ $]
+if [ $UID ]
