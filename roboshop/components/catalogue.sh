@@ -12,7 +12,7 @@ if [ $? -eq 0 ]; then
 
 else
     useradd roboshop &>>$LOG
-    
+fi
 Status_Check $?
 
 Print "Downloading catalogue content"
