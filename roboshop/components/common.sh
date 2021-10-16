@@ -14,4 +14,4 @@ Print() {
 
 if [ $UID -ne 0 ];then
     echo -e "\n\e[1;33myou should execute this script as root user\e[0m\n"
-    
+    exit 1
