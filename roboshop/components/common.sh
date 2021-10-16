@@ -9,7 +9,7 @@ fi
 }
 
 Print() {
-    echo 
+    echo -e ""
     echo -n -e "$1 \t- "
 }
 
