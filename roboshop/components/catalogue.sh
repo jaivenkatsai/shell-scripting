@@ -2,7 +2,7 @@
 
 source components/common.sh
 Print "Installing NodeJS"
-yum install nodejs make gcc-c++ -y &>>$LOG
+yum install nodejs make gcc-c++ -y 
 
 Print Adding Roboshop User
 useradd roboshop &>>$LOG
