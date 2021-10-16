@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+source 
 Print "Installing NodeJS"
 yum install nodejs make gcc-c++ -y 
 Let's now set up the catalogue application.
