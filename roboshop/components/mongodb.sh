@@ -40,7 +40,7 @@ curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongo
 Status_Check $?
 
 cd /tmp
-echo "Extacting Schema Archive"
+Print "Extacting Schema Archive"
 unzip -o mongodb.zip &>>/tmp/log
 Status_Check $?
 cd mongodb-main 
