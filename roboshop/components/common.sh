@@ -13,3 +13,4 @@ Print() {
 }
 
 if [ $UID -ne 0 ];then
+    echo -e 
