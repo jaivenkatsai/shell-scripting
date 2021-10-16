@@ -12,7 +12,7 @@ Print() {
     echo -n -e "$1"
 }
 
-echo "Setting Up MongoDB Repo"
+Print "Setting Up MongoDB Repo"
 
 echo '[mongodb-org-4.2]
 name=MongoDB Repository
@@ -22,7 +22,7 @@ enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mongodb.repo
 Status_Check $?
 
-echo "Installing MongoDB"
+Print "Installing MongoDB"
 yum install -y mongodb-org &>>/tmp/log
 Status_Check $?
 
