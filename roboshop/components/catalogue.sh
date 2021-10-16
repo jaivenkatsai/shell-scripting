@@ -20,7 +20,7 @@ mv catalogue-main catalogue
 Status_Check $?
 
 cd /home/roboshop/catalogue
-npm install 
+npm install &>>$LOG
 
 
 # mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
