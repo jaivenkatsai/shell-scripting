@@ -12,4 +12,4 @@ Print() {
     echo -n -e "$1 \t- "
 }
 
-if [ $UID -ne 0 ]
+if [ $UID -ne 0 ];then
