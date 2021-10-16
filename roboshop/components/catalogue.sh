@@ -9,7 +9,7 @@ Print Adding Roboshop User
 useradd roboshop &>>$LOG
 Status_Check $?
 
-So let's switch to the roboshop user and run the following commands.
+
 
 $ curl -s -L -o /tmp/catalogue.zip "https://github.com/roboshop-devops-project/catalogue/archive/main.zip"
 $ cd /home/roboshop
