@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Sour
+source
 
 Print "Setting Up MongoDB Repo"
 
