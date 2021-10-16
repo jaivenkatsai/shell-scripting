@@ -37,5 +37,5 @@ cd mongodb-main
  
 Print "Loading Schema\t\t"
 mongo < catalogue.js &>>$LOG
-mongo < users.js  &>>/tmp/log
+mongo < users.js  &>>$LOG
 Status_Check $?
