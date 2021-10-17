@@ -29,9 +29,9 @@ cd /home/roboshop/catalogue
 npm install  --unsafe-perm &>>$LOG
 Status_Check $?
 
-chown roboshop:roboshop -R /home/roboshop
+chown roboshop:roboshop -R /home/robosho
 
-Print ""
+Print "Uodatew"
 
 mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service && systemctl daemon-reload && systemctl start catalogue &>>$LOG && systemctl enable catalogue &>>$LOG
 Status_Check $?
