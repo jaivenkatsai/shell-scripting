@@ -12,7 +12,7 @@ Status_Check $?
 
 Print "Install Redis"
 yum install redis -y &>>$LOG
-
+Status_Check $?
 
 Update the BindIP from 127.0.0.1 to 0.0.0.0 in config file /etc/redis.conf & /etc/redis/redis.conf
 
