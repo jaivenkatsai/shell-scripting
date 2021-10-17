@@ -31,7 +31,7 @@ Status_Check $?
 
 chown roboshop:roboshop -R /home/roboshop
 
-Print "Update systemD "
+Print "Update systemD Servi"
 
 mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service && systemctl daemon-reload && systemctl start catalogue &>>$LOG && systemctl enable catalogue &>>$LOG
 Status_Check $?
