@@ -10,7 +10,7 @@ Print "Setup Redis Repos\t\t\t"
 yum-config-manager --enable remi &>>$LOG
 Status_Check $?
 
-Print "Install Redis"
+Print "Install Redis\t\t\t\t"
 yum install redis -y &>>$LOG
 Status_Check $?
 
