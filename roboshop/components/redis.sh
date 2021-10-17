@@ -6,7 +6,7 @@ Print "Install Yum Utils & Download Redis Repos"
 yum install epel-release yum-utils http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y &>>$LOG
 Status_Check $?
 
-Print "Setup Redis Repos"
+Print "Setup Redis Repos\t\t\t"
 yum-config-manager --enable remi &>>$LOG
 Status_Check $?
 
