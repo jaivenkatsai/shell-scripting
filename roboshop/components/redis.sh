@@ -3,7 +3,7 @@
 source components/common.sh
 
 Print "Install Yum Utils & Download Redis Repos"
-yum install epel-release yum-utils -y
+yum install epel-release yum-utils 
 # yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
 # yum-config-manager --enable remi
 # yum install redis -y
