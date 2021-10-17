@@ -10,7 +10,7 @@ Print "Setup Redis Repos"
 # yum-config-manager --enable remi &>>$LOG
 Status_Check $?
 
-Print "In"
+Print "Install Redis"
 # yum install redis -y
 Update the BindIP from 127.0.0.1 to 0.0.0.0 in config file /etc/redis.conf & /etc/redis/redis.conf
 
