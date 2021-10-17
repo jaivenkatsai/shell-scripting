@@ -1,3 +1,3 @@
 #!/bin/bash
 
-source components
+source components/common.sh
