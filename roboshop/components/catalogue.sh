@@ -32,7 +32,7 @@ Status_Check $?
 chown roboshop:roboshop -R /home/roboshop
 
 Print "Update systemD Service"
-sed -i -e's/MONGO_DNSNAME/
+sed -i -e's/MONGO_DNSNAME/mongodb.
 
 mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service && systemctl daemon-reload && systemctl start catalogue &>>$LOG && systemctl enable catalogue &>>$LOG
 Status_Check $?
