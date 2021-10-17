@@ -7,7 +7,7 @@ yum install epel-release yum-utils http://rpms.remirepo.net/enterprise/remi-rele
 Status_Check $?
 
 Print "Setup Redis Repos"
-# yum-config-manager --enable remi &>>$LOG
+yum-config-manager --enable remi &>>$LOG
 Status_Check $?
 
 Print "Install Redis"
