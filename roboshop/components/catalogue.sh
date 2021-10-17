@@ -29,7 +29,7 @@ cd /home/roboshop/catalogue
 npm install  --unsafe-perm &>>$LOG
 Status_Check $?
 
-chown roboshop:roboshop -R /home/robosho
+chown roboshop:roboshop -R /home/roboshop
 
 Print "Uodatew"
 
