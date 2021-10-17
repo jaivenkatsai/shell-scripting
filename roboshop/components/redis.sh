@@ -2,7 +2,7 @@
 
 source components/common.sh
 
-Print "Install Yum Utils"
+Print "Install Yum Utils "
 yum install epel-release yum-utils -y
 # yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y
 # yum-config-manager --enable remi
