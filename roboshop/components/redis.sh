@@ -20,6 +20,5 @@ Status_Check $?
 
 
 Print "Start Redis Database"
-
-# systemctl enable redis
+systemctl enable redis
 # systemctl start redis
