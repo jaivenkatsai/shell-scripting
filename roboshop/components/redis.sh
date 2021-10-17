@@ -19,7 +19,7 @@ sed -i -e 's/127.0.0.1/0.0.0.0 /etc/redis.conf
 Status_Check $?
 
 
-Start Redis Database
+Print Start Redis Database
 
 # systemctl enable redis
 # systemctl start redis
