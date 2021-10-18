@@ -1,3 +1,3 @@
 #!/bin/bash
 
-aws ec2 run-instances --image-id
+aws ec2 run-instances --image-id    
