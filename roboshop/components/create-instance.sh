@@ -1,3 +1,3 @@
 #!/bin/bash
 
-aws ec2 run-instances --ima
+aws ec2 run-instances --image
