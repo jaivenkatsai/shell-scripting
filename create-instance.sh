@@ -11,5 +11,5 @@ fi
 
 aws ec2 describe-instances --filters "Name=tag:Name,Values=catalogue" | jq .Reservations[].Instances[].State.Name | grep running &>/dev/null
 if [ $? -eq 0 ]; then
-    echo "Instance $INSTANCE_NAME" is already ru
+    echo "Instance $INSTANCE_NAME" is already running
 IP=$(aws ec2 run-instances --launch-template LaunchTemplateId=$LID,Version=$LVER --tag-specifications "ResourceType=spot-instances-request,Tags=[{Key=Name,Value=$INSTANCE_NAME}]" "ResourceType=instance,Tags=[{Key=Name,Value=$INSTANCE_NAME}]" | jq .Instances[].PrivateIpAddress | sed -e 's/"//g')
