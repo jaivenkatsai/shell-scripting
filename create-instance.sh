@@ -17,7 +17,7 @@ fi
 
 aws ec2 describe-instances --filters "Name=tag:Name,Values=$INSTANCE_NAME" | jq .Reservations[].Instances[].State.Name | grep stopped &>/dev/null
 if [ $? -eq 0 ]; then
-    echo "Instance $INSTANCE_NAME is already running"
+    echo "Instance $INSTANCE_NAME is already cr"
     exit 0
 fi
 
