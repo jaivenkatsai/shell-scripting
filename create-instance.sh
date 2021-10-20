@@ -9,4 +9,4 @@ if [ -z "${INSTANCE_NAME}" ]; then
     exit 1
 fi
 
-InstanceId=$(aws ec2 run-instances --launch-template LaunchTemplateId=$LID,Version=$LVER --tag-specifications "Resource Type=spot-instances-request,Tags=[{Key=Name,Value=$INSTANCE_NAME}]" "Resource Type=s-instances,Tags=[{Key=Name,Value=$INSTANCE_NAME}]" | jq .Instances[].InstanceId | sed -e 's"//g')
+InstanceId=$(aws ec2 run-instances --launch-template LaunchTemplateId=$LID,Version=$LVER --tag-specifications "Resource Type=spot-instances-request,Tags=[{Key=Name,Value=$INSTANCE_NAME}]" "Resource Type=instances,Tags=[{Key=Name,Value=$INSTANCE_NAME}]" | jq .Instances[].InstanceId | sed -e 's"//g')
