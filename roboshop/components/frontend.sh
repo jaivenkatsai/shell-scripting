@@ -14,7 +14,7 @@ Print "Extract Frontend Archive"
 rm -rf /usr/share/nginx/* && cd /usr/share/nginx && unzip -o /tmp/frontend.zip  &>>$LOG  && mv frontend-main/* .  &>>$LOG  && mv static html  &>>$LOG
 Status_Check $?
 
-Print "Copy Nginx RoboShop Config"
+Print "Update Nginx RoboShop Config"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf  &>>$LOG
 Status_Check $?
 
