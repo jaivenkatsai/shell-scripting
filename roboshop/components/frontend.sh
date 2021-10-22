@@ -18,8 +18,6 @@ Print "Update Nginx RoboShop Config"
 mv localhost.conf /etc/nginx/default.d/roboshop.conf  &>>$LOG
 Status_Check $?
 
-Print "Update Nginx RoboShop Config"
-Status_Check $?
 
 Print "Restart Nginx\t\t"
 systemctl restart nginx  &>>$LOG  && systemctl enable nginx &>>$LOG
