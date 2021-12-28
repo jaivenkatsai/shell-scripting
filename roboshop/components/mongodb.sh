@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 #!/bin/bash 
 
 source components/common.sh
 
 Print "Setting UP MongoDB Repo"
+=======
+#!/bin/bash
+
+source components/common.sh
+
+Print "Setting Up MongoDB Repo"
+>>>>>>> 15f62d9612ea07cf8b75b8abe232d3283b07466a
 
 echo '[mongodb-org-4.2]
 name=MongoDB Repository
@@ -11,6 +19,7 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc' >/etc/yum.repos.d/mongodb.repo
 Status_Check $?
+<<<<<<< HEAD
 
 Print "Installing MongoDB\t"
 yum install -y mongodb-org &>>$LOG 
@@ -42,3 +51,33 @@ done
 Status_Check $?
 
 exit 0
+=======
+
+Print "Installing MongoDB\t"
+yum install -y mongodb-org &>>$LOG
+Status_Check $?
+
+Print "Configuring MongoDB\t"
+sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/mongod.conf
+Status_Check $?
+
+Print "Starting MongoDB\t"
+systemctl enable mongod
+systemctl restart mongod
+Status_Check $?
+
+Print "Downloading MongoDB Schema"
+curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip"
+Status_Check $?
+
+cd /tmp
+Print "Extacting Schema Archive"
+unzip -o mongodb.zip &>>$LOG
+Status_Check $?
+cd mongodb-main 
+ 
+Print "Loading Schema\t\t"
+mongo < catalogue.js &>>$LOG
+mongo < users.js  &>>$LOG
+Status_Check $?
+>>>>>>> 15f62d9612ea07cf8b75b8abe232d3283b07466a
