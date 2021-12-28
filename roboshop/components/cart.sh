@@ -7,5 +7,5 @@ COMPONENT=cart
 NODEJS
 #<<<<<<< HEAD
 #=======
-© 2021 GitHub, Inc.
->>>>>>> 15f62d9612ea07cf8b75b8abe232d3283b07466a
+@© 2021 GitHub, Inc.
+#>>>>>>> 15f62d9612ea07cf8b75b8abe232d3283b07466a
