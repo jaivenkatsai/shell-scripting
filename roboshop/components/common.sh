@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/bin/bash 
 
 Status_Check() {
@@ -6,6 +5,7 @@ Status_Check() {
     echo -e "\e[32mSUCCESS\e[0m"
   else 
     echo -e "\e[31mFAILURE\e[0m"
+    echo -e "\e[33m Refer Log file : $LOG for more information\e[0m"
     exit 2
   fi 
 }
@@ -21,28 +21,6 @@ if [ $UID -ne 0 ]; then
 fi 
 
 LOG=/tmp/roboshop.log 
-=======
-#!/bin/bash
-
-Status_Check() {
-    if [ $1 -eq 0 ]; then
-    echo -e "\e[32mSUCCESS\e[0m"
-else
-    echo -e "\e[31mFAILURE\e[0m"
-fi
-}
-
-Print() {
-    echo -e "\n\t\t\e[36m----------------- $1 -------------------\e[0m\n" >>$LOG
-    echo -n -e "$1 \t- "
-}
-
-if [ $UID -ne 0 ];then
-    echo -e "\n\e[1;33myou should execute this script as root user\e[0m\n"
-    exit 1
-fi
-LOG=/tmp/roboshop.log
->>>>>>> 15f62d9612ea07cf8b75b8abe232d3283b07466a
 rm -f $LOG
 
 ADD_APP_USER() {
@@ -68,11 +46,7 @@ DOWNLOAD() {
 
 SystemdD_Setup() {
   Print "Update SystemD Service\t"
-<<<<<<< HEAD
-  sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' /home/roboshop/${COMPONENT}/systemd.service
-=======
   sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal/' -e 's/REDIS_ENDPOINT/redis.roboshop.internal/' -e  's/MONGO_ENDPOINT/mongodb.roboshop.internal/' -e 's/CATALOGUE_ENDPOINT/catalogue.roboshop.internal/' -e 's/CARTENDPOINT/cart.roboshop.internal/' -e 's/DBHOST/mysql.roboshop.internal/' -e 's/CARTHOST/cart.roboshop.internal/' -e 's/USERHOST/user.roboshop.internal/' -e 's/AMQPHOST/rabbitmq.roboshop.internal/'  /home/roboshop/${COMPONENT}/systemd.service
->>>>>>> 15f62d9612ea07cf8b75b8abe232d3283b07466a
   Status_Check $?
 
   Print "Setup SystemD Service\t"
@@ -93,8 +67,6 @@ NODEJS() {
   chown roboshop:roboshop -R /home/roboshop
   SystemdD_Setup
 }
-<<<<<<< HEAD
-=======
 
 JAVA() {
   Print "Installing Maven\t"
@@ -136,4 +108,3 @@ PYTHON() {
 
   SystemdD_Setup
 }
->>>>>>> 15f62d9612ea07cf8b75b8abe232d3283b07466a
